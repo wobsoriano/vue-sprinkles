@@ -3,10 +3,7 @@ import { Box } from '../Box'
 import type { ButtonVariants } from './Button.css'
 import { buttonRecipe } from './Button.css'
 
-withDefaults(defineProps<ButtonVariants>(), {
-  size: 'md',
-  kind: 'secondary',
-})
+defineProps<NonNullable<ButtonVariants>>()
 </script>
 
 <template>

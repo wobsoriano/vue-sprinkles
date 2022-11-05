@@ -2,6 +2,7 @@
 import { sprinkles, themeClass } from './sprinkles.css'
 import { Box } from './Box'
 import Text from './components/Text.vue'
+import Button from './components/Button.vue'
 </script>
 
 <template>
@@ -9,10 +10,11 @@ import Text from './components/Text.vue'
     <Box
       as="a"
       href="https://google.com"
-      padding="extraLarge"
+      :padding="{ desktop: 'extraLarge', 'mobile': 'small' }"
     >
       With atoms
     </Box>
+
     <Box>No props box</Box>
     <Text kind="h1">
       header 1 text
@@ -23,5 +25,13 @@ import Text from './components/Text.vue'
     <Text kind="p">
       paragraph text
     </Text>
+
+    <Button size="md" kind="primary">
+      Button
+    </Button>
+
+    <Button size="lg" kind="secondary">
+      Button
+    </Button>
   </Box>
 </template>

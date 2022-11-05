@@ -83,9 +83,13 @@ import { Box } from './Box'
 import type { ButtonVariants } from '@/button.css'
 import { button } from '@/button.css'
 
-withDefaults(defineProps<ButtonVariants>(), {
-  color: 'brand',
-  size: 'large',
+// defineProps must be a literal type, or a reference to an interface or literal type
+withDefaults(defineProps<{
+  size: NonNullable<ButtonVariants>['size']
+  kind: NonNullable<ButtonVariants>['kind']
+}>(), {
+  size: 'md',
+  kind: 'secondary',
 })
 </script>
 
