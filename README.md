@@ -86,8 +86,8 @@ import { button } from '@/button.css'
 // type passed to defineProps must be a literal type,
 // or a reference to an interface or literal type
 defineProps<{
-  size: NonNullable<ButtonVariants>['size']
-  kind: NonNullable<ButtonVariants>['kind']
+  size?: NonNullable<ButtonVariants>['size']
+  kind?: NonNullable<ButtonVariants>['kind']
 }>()
 </script>
 
