@@ -49,7 +49,7 @@ const flexDirection = Math.random() > 0.5 ? 'column' : 'row'
 </template>
 ```
 
-<img src="demo.png" />
+<img src="demo.png" width="400" />
 
 ## Recommended IDE Setup
 
