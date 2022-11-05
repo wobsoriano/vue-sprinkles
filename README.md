@@ -30,7 +30,7 @@ export const container = sprinkles({
 })
 ```
 
-Import and use the `styled` function:
+Import and use the `useSprinkles` composable:
 
 ```vue
 <script setup lang="ts">
