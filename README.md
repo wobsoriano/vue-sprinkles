@@ -10,11 +10,9 @@ pnpm add vue-sprinkles # or npm or yarn
 
 ## Usage
 
-Create a recipe:
-
 ```ts
 // styles.css.ts
-import { sprinkles } from './sprinkles.css.ts';
+import { sprinkles } from './sprinkles.css.ts'
 
 export const container = sprinkles({
   display: 'flex',
