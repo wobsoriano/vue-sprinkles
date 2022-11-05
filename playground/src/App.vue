@@ -33,5 +33,16 @@ import Button from './components/Button.vue'
     <Button size="lg" kind="secondary">
       Button
     </Button>
+
+    <Box
+      as="a"
+      href="https://google.com"
+      :padding="{ desktop: 'extraLarge', mobile: 'small' }"
+      class="custom_class"
+    >
+      With atoms + className
+    </Box>
+
+    <Box>Without atoms or className</Box>
   </Box>
 </template>
