@@ -84,13 +84,10 @@ import type { ButtonVariants } from '@/button.css'
 import { button } from '@/button.css'
 
 // defineProps must be a literal type, or a reference to an interface or literal type
-withDefaults(defineProps<{
+defineProps<{
   size: NonNullable<ButtonVariants>['size']
   kind: NonNullable<ButtonVariants>['kind']
-}>(), {
-  size: 'md',
-  kind: 'secondary',
-})
+}>()
 </script>
 
 <template>
