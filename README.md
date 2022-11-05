@@ -87,7 +87,7 @@ import { button } from '@/button.css'
 // or a reference to an interface or literal type
 defineProps<{
   size?: NonNullable<ButtonVariants>['size']
-  kind?: NonNullable<ButtonVariants>['kind']
+  color?: NonNullable<ButtonVariants>['color']
 }>()
 </script>
 
