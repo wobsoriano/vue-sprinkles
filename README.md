@@ -43,7 +43,7 @@ const flexDirection = Math.random() > 0.5 ? 'column' : 'row'
 </script>
 
 <template>
-  <Box as="section" display="flex" flexDirection>
+  <Box as="section" display="flex" :flex-direction="flexDirection">
     ...
   </Box>
 </template>

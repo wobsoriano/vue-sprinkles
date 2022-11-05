@@ -6,7 +6,7 @@ const Box = useSprinkles(sprinkles)
 </script>
 
 <template>
-  <Box as="button" display="flex" background="gray-900" padding="large">
+  <Box as="button" display="flex" background="gray-900" padding="large" align-items="center">
     Button
   </Box>
 </template>
