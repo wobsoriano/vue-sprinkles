@@ -1,0 +1,63 @@
+{
+  "name": "vue-sprinkles",
+  "version": "0.0.0",
+  "description": "A composable to create a component from your vanilla-extract + sprinkles tokens.",
+  "keywords": [
+    "css",
+    "css-in-js",
+    "stylesheet",
+    "vue",
+    "sprinkles",
+    "atoms",
+    "vanilla",
+    "extract"
+  ],
+  "homepage": "https://github.com/wobsoriano/vue-sprinkles#readme",
+  "bugs": {
+    "url": "https://github.com/wobsoriano/vue-sprinkles/issues"
+  },
+  "license": "MIT",
+  "author": "Robert Soriano <sorianorobertc@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wobsoriano/vue-sprinkles.git"
+  },
+  "funding": "https://github.com/sponsors/wobsoriano",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "dev": "concurrently \"pnpm build --watch\" \"pnpm --filter playground dev\"",
+    "build": "tsup",
+    "lint": "eslint .",
+    "prepublishOnly": "pnpm run build",
+    "release": "bumpp --commit --push --tag && pnpm publish",
+    "postinstall": "pnpm build"
+  },
+  "peerDependencies": {
+    "vue": ">=3.2.0"
+  },
+  "dependencies": {
+    "@vanilla-extract/css": "^1.9.1",
+    "@vanilla-extract/sprinkles": "^1.5.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.21.1",
+    "bumpp": "^8.2.1",
+    "concurrently": "^7.5.0",
+    "eslint": "^8.14.0",
+    "tsup": "^6.4.0",
+    "typescript": "^4.6.3",
+    "vue": "^3.2.33"
+  }
+}
