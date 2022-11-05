@@ -79,10 +79,9 @@ export type ButtonVariants = Parameters<typeof button>[0]
 ```vue
 <script setup lang="ts">
 import { useSprinkles } from 'vue-sprinkles'
+import { Box } from './Box'
 import type { ButtonVariants } from '@/button.css'
 import { button } from '@/button.css'
-
-const Box = useSprinkles(container)
 
 defineProps<ButtonVariants>()
 </script>
