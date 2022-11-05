@@ -83,7 +83,10 @@ import { Box } from './Box'
 import type { ButtonVariants } from '@/button.css'
 import { button } from '@/button.css'
 
-defineProps<ButtonVariants>()
+withDefaults(defineProps<ButtonVariants>(), {
+  color: 'brand',
+  size: 'large',
+})
 </script>
 
 <template>
