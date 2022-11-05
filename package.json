@@ -1,6 +1,6 @@
 {
   "name": "vue-sprinkles",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A composable to create a component from your vanilla-extract + sprinkles tokens.",
   "keywords": [
     "css",
